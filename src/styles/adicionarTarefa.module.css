@@ -1,0 +1,55 @@
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.entrada[type='text'], .entrada[type='color'] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.entrada[type='color'] {
+  padding: 0px;
+}
+
+.entrada[type='text']:focus, .entrada[type='color']:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.botaoAdicionar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botaoAdicionar:hover {
+  background-color: #45a049;
+  transform: scale(1.01);
+}
+
+.botaoAdicionar:active {
+  background-color: #388e3c;
+}
