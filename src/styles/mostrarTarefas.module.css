@@ -25,7 +25,7 @@
   color: #888;
 }
 
-.botaoFeito {
+.botaoFeito, .botaoExcluir {
   padding: 8px 16px;
   font-size: 1rem;
   border: none;
@@ -36,9 +36,18 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.botaoFeito:hover {
+.botaoExcluir {
+  background-color: #F44336;
+  margin-left: 15px;
+}
+
+.botaoFeito:hover .botaoExcluir:hover{
   background-color: #45a049;
   transform: scale(1.05);
+}
+
+.botaoExcluir:hover {
+  background-color: #E53935;
 }
 
 .botaoFeito:active {
